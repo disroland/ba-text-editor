@@ -4,7 +4,7 @@ body {background-color: #464f54}
 {width: 100%;
 max-width: 1060px;
 margin: 0 auto;
-padding: 0 15px;}
+padding: 150px 15px 0 15px;}
 
 
 .ba-paper 
@@ -27,8 +27,35 @@ text-decoration: none;}
 .ba-article-meta a:hover {color:tomato;}
 .ba-article-meta a:focus {color:red;}
 .ba-article-meta a:active {color: gold;}
+.ba-article-author {font-family: 'ProximaNova', sans-serif;}
 /*title*/
-.ba-article-title {text-transform: uppercase;font-size: 50px;color: #2a2a2a;text-align: center;letter-spacing: 0; transition: 1s;}
+.ba-article-title 
+{text-transform: uppercase;
+	font-size: 50px;
+	color: #2a2a2a;text-align: center;
+	letter-spacing: 0; transition: 2s;font-family: 'roboto', sans-serif;}
 .ba-article-except {color: #8f8f8f; font-size: 1.875rem;margin:0.1em 0 2em; font-style: italic;}
 .ba-article-text {color:black; font-size: 1.6875rem; line-height: 1.53;}
-.ba-article-title:hover {letter-spacing: 5px; text-shadow: blue 2px 1px 3px;}
+/*.ba-article-title:hover {letter-spacing: 5px; text-shadow: red 2px 1px 3px;}*/
+/*forms*/
+.ba-form-editor {position: absolute;top:47px;right: 0;max-width: 870px; width:100%;}
+.ba-form-title {background-color:black; padding:40px 0 50px 60px;height: 188px;color: silver;}
+.ba-form_input {display:block; background-color: transparent;border: none;width: 100%;border-bottom: 1px solid darkgray; font-size: 3rem;color:#fefefe;line-height: 1.9583;}
+.ba-form-label {color: #767676; text-transform: uppercase;font-family: sans-serif;}
+.ba-form-bottom 
+{background-color: #edb62b; height: 78px; padding: 0 200px 0 45px; display: flex;align-items: center; justify-content: space-between; width: calc(100% - 63px);margin-left:auto;}
+.ba-form-btn {opacity:0.6;height: 36px;width: 36px;background-color: transparent;text-transform: uppercase; cursor:pointer;color: #fff;}
+.ba-form-btn:hover, .ba-form-btn:focus, .ba-form-btn_active_ {opacity: 1;}
+[class*="ba-form-text-align"] {padding:1px 1px 1px 1px; display: flex;flex-direction: column;justify-content: space-between;overflow: hidden;}
+[class*="ba-form-text-align"] span {
+height: 3px;
+width:36px;
+max-width: 100%;
+display: inline-block;
+background-color: white;
+}
+[class*="ba-form-text-align"]:not(.ba-form-text-align_justify) span:nth-child(even){
+	max-width: 60%;
+}
+.ba-form-text-align_center {align-items: center;}
+.ba-form-text-align_right {align-items: flex-end;}
